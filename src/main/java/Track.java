@@ -240,7 +240,7 @@ public class Track extends Group {
     private EventHandler<MouseEvent> locationEvent = mouseEvent -> {
         Location l = (Location) mouseEvent.getSource();
 
-        // System.out.println("Active Car: " + activeCar.getIdentifier() + "\n\n"); // Useful for debugging.
+        System.out.println("Active Car: " + activeCar.getIdentifier() + "\n\n"); // Useful for debugging.
 
         if (!activeCar.getVisited(l) ) {
 
